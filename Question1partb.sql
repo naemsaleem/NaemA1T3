@@ -1,2 +1,2 @@
-mysqlimport –local -d 
-–ignore-lines=0 -u awkology -p compboil annotation.tab
+mysql -u awkologist -p compbiol -e 
+'SELECT * from annotation;' > annotation.tab
