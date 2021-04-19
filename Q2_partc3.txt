@@ -1,0 +1,2 @@
+Mysql –u awkologi –p compbiol –e 
+‘SELECT distinct Member.LastName,Member.MemberID FROM Member INNER JOIN Entry ON Member.MemberID = Entry.MemberID WHERE YEAR NOT IN(SELECT MemberID FROM Entry WHERE Year=2013);
